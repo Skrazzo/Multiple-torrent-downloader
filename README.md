@@ -1,8 +1,6 @@
 # Torrent downloader
 
-
-
-
+https://github.com/user-attachments/assets/6686ed86-7b16-4626-83f6-818e9f2ed969
 
 ## Features
 
