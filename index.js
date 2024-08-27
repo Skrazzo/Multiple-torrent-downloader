@@ -29,7 +29,11 @@ process.on("SIGINT", function () {
 
     const browser = await puppeteer.launch({
         headless: false,
-        args: [`--window-size=1520,800`],
+        args: [
+            `--window-size=1520,800`,
+            "--no-sandbox",
+            "--disable-setuid-sandbox",
+        ],
         defaultViewport: {
             width: 1520,
             height: 800,
