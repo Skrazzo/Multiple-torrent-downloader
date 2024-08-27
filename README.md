@@ -5,7 +5,7 @@ https://github.com/user-attachments/assets/6686ed86-7b16-4626-83f6-818e9f2ed969
 ## Features
 
 - Gets all manget links from opened `thepiratebay` tabs
-- Converts all magnet links to torrent files via [magnet2torrent.com](https://magnet2torrent.com)
+- Converts all magnet links to torrent files via **aria2c**
 - Has adblocker to avoid any annoyance.
 
 
@@ -16,9 +16,8 @@ https://github.com/user-attachments/assets/6686ed86-7b16-4626-83f6-818e9f2ed969
 2. Then just search up whatever you want to, and open links by `middle click` on your mouse, to open it in the new tab.
 3. After you have opened all of the links you want to download, just close the first tab of the browser aka the `about:blank` tab
 4. After that, puppeteer will collect all of the magnet links from tabs you have opened
-5. Then it will navigate to [magnet2torrent.com](https://magnet2torrent.com) website, and enter all of the links it has collected.
-6. Allow to save all the files, and done.
-7. Select all .torrent files, and open them
+5. Nodejs will use aria2c to convert magnet links to torrent files 
+6. Select all .torrent files, and open them
 
 
 
