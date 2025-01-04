@@ -57,6 +57,8 @@ const aria2cCommand = "aria2c --bt-metadata-only=true --bt-save-metadata=true ";
 
         await sleep(2000);
     }
+
+    
 })();
 
 async function executeDownloading(browser) {
@@ -67,6 +69,9 @@ async function executeDownloading(browser) {
 
     // Download torrent files
     await downloadAll(magnets);
+
+    // Download is complete, close browser
+    await browser.close();
     Deno.exit();
 }
 
