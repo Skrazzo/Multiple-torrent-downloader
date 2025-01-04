@@ -4,5 +4,8 @@
     "puppeteer-extra": "npm:puppeteer-extra@^3.3.6",
     "puppeteer-extra-plugin-adblocker": "npm:puppeteer-extra-plugin-adblocker@^2.13.6"
   },
+  "tasks": {
+    "dev": "deno run -A index.js"
+  },
   "nodeModulesDir":"auto"
 }
