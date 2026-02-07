@@ -1,9 +1,8 @@
 {
-  "version": "4",
+  "version": "5",
   "specifiers": {
     "npm:@types/node@*": "22.5.4",
-    "npm:p-limit@*": "6.1.0",
-    "npm:p-limit@^6.1.0": "6.1.0",
+    "npm:p-limit@^6.2.0": "6.2.0",
     "npm:puppeteer-extra-plugin-adblocker@*": "2.13.6_puppeteer@23.7.1__devtools-protocol@0.0.1354347_puppeteer-extra@3.3.6__puppeteer@23.7.1___devtools-protocol@0.0.1354347",
     "npm:puppeteer-extra-plugin-adblocker@^2.13.6": "2.13.6_puppeteer@23.7.1__devtools-protocol@0.0.1354347_puppeteer-extra@3.3.6__puppeteer@23.7.1___devtools-protocol@0.0.1354347",
     "npm:puppeteer-extra@*": "3.3.6_puppeteer@23.7.1__devtools-protocol@0.0.1354347",
@@ -26,10 +25,12 @@
       "integrity": "sha512-5LcV8UZv49RWwtpom9ve4TxJIFKd+bjT59tS/2Z2c22Qxx5CW1ncO/T+ybzk31z422XplQfd0ZE6gMGGKs3EMg==",
       "dependencies": [
         "@cliqz/adblocker-extended-selectors"
-      ]
+      ],
+      "deprecated": true
     },
     "@cliqz/adblocker-extended-selectors@1.34.0": {
-      "integrity": "sha512-lNrgdUPpsBWHjrwXy2+Z5nX/Gy5YAvNwFMLqkeMdjzrybwPIalJJN2e+YtkS1I6mVmOMNppF5cv692OAVoI74g=="
+      "integrity": "sha512-lNrgdUPpsBWHjrwXy2+Z5nX/Gy5YAvNwFMLqkeMdjzrybwPIalJJN2e+YtkS1I6mVmOMNppF5cv692OAVoI74g==",
+      "deprecated": true
     },
     "@cliqz/adblocker-puppeteer@1.23.8_puppeteer@23.7.1__devtools-protocol@0.0.1354347": {
       "integrity": "sha512-Ca1/DBqQXsOpKTFVAHX6OpLTSEupXmUkUWHj6iXhLLleC7RPISN5B0b801VDmaGRqoC5zKRxn0vYbIfpgCWVug==",
@@ -38,7 +39,8 @@
         "@cliqz/adblocker-content",
         "puppeteer",
         "tldts-experimental@5.7.112"
-      ]
+      ],
+      "deprecated": true
     },
     "@cliqz/adblocker@1.34.0": {
       "integrity": "sha512-d7TeUl5t+TOMJe7/CRYtf+x6hbd8N25DtH7guQTIjjr3AFVortxiAIgNejGvVqy0by4eNByw+oVil15oqxz2Eg==",
@@ -51,7 +53,8 @@
         "@types/chrome",
         "@types/firefox-webext-browser",
         "tldts-experimental@6.1.61"
-      ]
+      ],
+      "deprecated": true
     },
     "@puppeteer/browsers@2.4.1": {
       "integrity": "sha512-0kdAbmic3J09I6dT8e9vE2JOCSt13wHCW5x/ly8TSt2bDtuIWe2TgLZZDHdcziw9AVCzflMAXCrVyRIhIs44Ng==",
@@ -64,7 +67,8 @@
         "tar-fs",
         "unbzip2-stream",
         "yargs"
-      ]
+      ],
+      "bin": true
     },
     "@remusao/guess-url-type@1.3.0": {
       "integrity": "sha512-SNSJGxH5ckvxb3EUHj4DqlAm/bxNxNv2kx/AESZva/9VfcBokwKNS+C4D1lQdWIDM1R3d3UG+xmVzlkNG8CPTQ=="
@@ -306,12 +310,16 @@
       "dependencies": [
         "esprima",
         "estraverse",
-        "esutils",
+        "esutils"
+      ],
+      "optionalDependencies": [
         "source-map"
-      ]
+      ],
+      "bin": true
     },
     "esprima@4.0.1": {
-      "integrity": "sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A=="
+      "integrity": "sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==",
+      "bin": true
     },
     "estraverse@5.3.0": {
       "integrity": "sha512-MMdARuVEQziNTeJD8DgMqmhwR11BRQ/cBP+pLtYdSTnf3MIO8fFeiINEbX36ZdNlfU/7A9f3gUw49B3oQsvwBA=="
@@ -322,11 +330,14 @@
     "extract-zip@2.0.1": {
       "integrity": "sha512-GDhU9ntwuKyGXdZBUgTIe+vXnWj0fppUEtMDL0+idd5Sta8TGpHssn/eusA9mrPr9qNDym6SxAYZjNvCn/9RBg==",
       "dependencies": [
-        "@types/yauzl",
         "debug",
         "get-stream",
         "yauzl"
-      ]
+      ],
+      "optionalDependencies": [
+        "@types/yauzl"
+      ],
+      "bin": true
     },
     "fast-fifo@1.3.2": {
       "integrity": "sha512-/d9sfos4yxzpwkDkuN7k2SqFKtYNmCTzgfEpz82x34IM9/zc8KGxQoXg1liNC/izpRM/MBdt44Nmx41ZWqk+FQ=="
@@ -437,7 +448,8 @@
       "integrity": "sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==",
       "dependencies": [
         "argparse"
-      ]
+      ],
+      "bin": true
     },
     "jsbn@1.1.0": {
       "integrity": "sha512-4bYVV3aAMtDTTu4+xsDYa6sy9GyJ69/amsu9sYF2zqjiEoZA5xJi3BrfX3uY+/IekIu7MwdObdbDWpoZdBv3/A=="
@@ -448,8 +460,10 @@
     "jsonfile@6.1.0": {
       "integrity": "sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==",
       "dependencies": [
-        "graceful-fs",
         "universalify"
+      ],
+      "optionalDependencies": [
+        "graceful-fs"
       ]
     },
     "kind-of@2.0.1": {
@@ -512,8 +526,8 @@
         "wrappy"
       ]
     },
-    "p-limit@6.1.0": {
-      "integrity": "sha512-H0jc0q1vOzlEk0TqAKXKZxdl7kX3OFUzCnNVUnq5Pc3DGo0kpeaMuPqxQn235HibwBEb0/pm9dgKTjXy66fBkg==",
+    "p-limit@6.2.0": {
+      "integrity": "sha512-kuUqqHNUqoIWp/c467RI4X6mmyuojY5jGutNU0wVTmEOOfcuwLqyMVoAi9MKi2Ak+5i9+nhmrK4ufZE8069kHA==",
       "dependencies": [
         "yocto-queue"
       ]
@@ -596,16 +610,6 @@
         "ws"
       ]
     },
-    "puppeteer-extra-plugin-adblocker@2.13.6_puppeteer-extra@3.3.6": {
-      "integrity": "sha512-AftgnUZ1rg2RPe9RpX6rkYAxEohwp3iFeGIyjsAuTaIiw4VLZqOb1LSY8/S60vAxpeat60fbCajxoUetmLy4Dw==",
-      "dependencies": [
-        "@cliqz/adblocker-puppeteer",
-        "debug",
-        "node-fetch",
-        "puppeteer-extra@3.3.6",
-        "puppeteer-extra-plugin@3.2.3_puppeteer-extra@3.3.6"
-      ]
-    },
     "puppeteer-extra-plugin-adblocker@2.13.6_puppeteer@23.7.1__devtools-protocol@0.0.1354347_puppeteer-extra@3.3.6__puppeteer@23.7.1___devtools-protocol@0.0.1354347": {
       "integrity": "sha512-AftgnUZ1rg2RPe9RpX6rkYAxEohwp3iFeGIyjsAuTaIiw4VLZqOb1LSY8/S60vAxpeat60fbCajxoUetmLy4Dw==",
       "dependencies": [
@@ -613,17 +617,12 @@
         "debug",
         "node-fetch",
         "puppeteer",
-        "puppeteer-extra@3.3.6_puppeteer@23.7.1__devtools-protocol@0.0.1354347",
-        "puppeteer-extra-plugin@3.2.3_puppeteer-extra@3.3.6__puppeteer@23.7.1___devtools-protocol@0.0.1354347_puppeteer@23.7.1__devtools-protocol@0.0.1354347"
-      ]
-    },
-    "puppeteer-extra-plugin@3.2.3_puppeteer-extra@3.3.6": {
-      "integrity": "sha512-6RNy0e6pH8vaS3akPIKGg28xcryKscczt4wIl0ePciZENGE2yoaQJNd17UiEbdmh5/6WW6dPcfRWT9lxBwCi2Q==",
-      "dependencies": [
-        "@types/debug",
-        "debug",
-        "merge-deep",
-        "puppeteer-extra@3.3.6"
+        "puppeteer-extra",
+        "puppeteer-extra-plugin"
+      ],
+      "optionalPeers": [
+        "puppeteer",
+        "puppeteer-extra"
       ]
     },
     "puppeteer-extra-plugin@3.2.3_puppeteer-extra@3.3.6__puppeteer@23.7.1___devtools-protocol@0.0.1354347_puppeteer@23.7.1__devtools-protocol@0.0.1354347": {
@@ -632,15 +631,10 @@
         "@types/debug",
         "debug",
         "merge-deep",
-        "puppeteer-extra@3.3.6_puppeteer@23.7.1__devtools-protocol@0.0.1354347"
-      ]
-    },
-    "puppeteer-extra@3.3.6": {
-      "integrity": "sha512-rsLBE/6mMxAjlLd06LuGacrukP2bqbzKCLzV1vrhHFavqQE/taQ2UXv3H5P0Ls7nsrASa+6x3bDbXHpqMwq+7A==",
-      "dependencies": [
-        "@types/debug",
-        "debug",
-        "deepmerge"
+        "puppeteer-extra"
+      ],
+      "optionalPeers": [
+        "puppeteer-extra"
       ]
     },
     "puppeteer-extra@3.3.6_puppeteer@23.7.1__devtools-protocol@0.0.1354347": {
@@ -649,6 +643,9 @@
         "@types/debug",
         "debug",
         "deepmerge",
+        "puppeteer"
+      ],
+      "optionalPeers": [
         "puppeteer"
       ]
     },
@@ -661,7 +658,10 @@
         "devtools-protocol",
         "puppeteer-core",
         "typed-query-selector"
-      ]
+      ],
+      "deprecated": true,
+      "scripts": true,
+      "bin": true
     },
     "queue-tick@1.0.1": {
       "integrity": "sha512-kJt5qhMxoszgU/62PLP1CJytzd2NKetjSRnyuj31fDd3Rlcz3fzlFdFLD1SItunPwyqEOkca6GbV612BWfaBag=="
@@ -673,7 +673,8 @@
       "integrity": "sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g=="
     },
     "semver@7.6.3": {
-      "integrity": "sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A=="
+      "integrity": "sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==",
+      "bin": true
     },
     "shallow-clone@0.1.2": {
       "integrity": "sha512-J1zdXCky5GmNnuauESROVu31MQSnLoYvlyEn6j2Ztk6Q5EHFIhxkMhYcv6vuDzl2XEzoRr856QwzMgWM/TmZgw==",
@@ -711,10 +712,12 @@
     "streamx@2.20.1": {
       "integrity": "sha512-uTa0mU6WUC65iUvzKH4X9hEdvSW7rbPxPtwfWiLMSj3qTdQbAiUboZTxauKfpFuGIGa1C2BYijZ7wgdUXICJhA==",
       "dependencies": [
-        "bare-events",
         "fast-fifo",
         "queue-tick",
         "text-decoder"
+      ],
+      "optionalDependencies": [
+        "bare-events"
       ]
     },
     "string-width@4.2.3": {
@@ -734,10 +737,12 @@
     "tar-fs@3.0.6": {
       "integrity": "sha512-iokBDQQkUyeXhgPYaZxmczGPhnhXZ0CmrqI+MOb/WFGS9DW5wnfrLgtjUJBvz50vQ3qfRwJ62QVoCFu8mPVu5w==",
       "dependencies": [
-        "bare-fs",
-        "bare-path",
         "pump",
         "tar-stream"
+      ],
+      "optionalDependencies": [
+        "bare-fs",
+        "bare-path"
       ]
     },
     "tar-stream@3.1.7": {
@@ -846,8 +851,8 @@
         "fd-slicer"
       ]
     },
-    "yocto-queue@1.1.1": {
-      "integrity": "sha512-b4JR1PFR10y1mKjhHY9LaGo6tmrgjit7hxVIeAmyMw3jegXR4dhYqLaQF5zMXZxY7tLpMyJeLjr1C4rLmkVe8g=="
+    "yocto-queue@1.2.2": {
+      "integrity": "sha512-4LCcse/U2MHZ63HAJVE+v71o7yOdIe4cZ70Wpf8D/IyjDKYQLV5GD46B+hSTjJsvV5PztjvHoU580EftxjDZFQ=="
     },
     "zod@3.23.8": {
       "integrity": "sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g=="
@@ -855,7 +860,7 @@
   },
   "workspace": {
     "dependencies": [
-      "npm:p-limit@^6.1.0",
+      "npm:p-limit@^6.2.0",
       "npm:puppeteer-extra-plugin-adblocker@^2.13.6",
       "npm:puppeteer-extra@^3.3.6"
     ]
